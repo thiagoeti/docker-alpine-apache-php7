@@ -3,13 +3,10 @@
 #++++++++++++++++++++++++++++++++++++++
 
 # so
-FROM alpine:latest
+FROM alpine:3.15
 
 # by
 MAINTAINER Thiago Silva - thiagoeti@gmail.com
-
-# repositories
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> "/etc/apk/repositories"
 
 # update
 RUN apk --no-cache update && apk --no-cache upgrade
